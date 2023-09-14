@@ -1,0 +1,178 @@
+:root {
+    --grey: #787c7e;
+    --gold: #eed548;
+    --green: #46f736;
+    --cyan: #00bfff;
+    --blanco: #ffffff;
+    --gris-square: #c0c4c6;
+    --box: #0000001a;
+    --loading: #000;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url('./img/fondoo.png');
+}
+.background {
+    opacity: 0.9;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    overflow-y: auto;
+}
+.container {
+    font-weight: bold;
+    color: var(--blanco);
+    max-width: 800px;
+    margin: auto;
+    padding: 1.5%;
+    border-radius: 15px;
+    background-color: var(--grey);
+    box-shadow: 0px 0px 10px var(--box);    
+}
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: var(--green);
+}
+.detalle {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    line-height: 35px;
+}
+.verde {
+    color: var(--green);
+}
+.amarillo {
+    color: var(--gold);
+}
+.gris{
+    color: var(--gris-square);
+}
+.loading {
+    font-size: 3.5rem;
+    color: var(--loading);
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row {
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.square {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--gris-square);
+    outline: none;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--blanco);
+    text-align: center;
+}
+.time {
+    color: var(--loading);
+}
+.result {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px auto;
+}
+.button {
+    width: 170px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--cyan);
+    font-size: 3.2rem;
+    margin-top: 20px;
+    color: var(--blanco);
+}
+.button:hover {
+    border: 2px solid var(--cyan);
+    background-color: var(--blanco);
+    color:  var(--cyan);
+    cursor: pointer;
+}
+.grey {
+    background-color: var(--grey);
+}
+.gold {
+    background-color: var(--gold);
+}
+.green {
+    background-color: var(--green);
+     
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    .detalle {
+        font-size: 1.5rem;
+        line-height: 25px;
+    }
+    .square {
+        width: 60px;
+        height: 60px;
+        font-size: 40px;
+    }
+    .result {
+        font-size: 24px;
+    }
+    .button {
+        width: 140px;
+        height: 40px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .detalle {
+        font-size: 1.2rem;
+        line-height: 20px;
+    }
+    .square {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+    }
+    .result {
+        font-size: 18px;
+    }
+    .button {
+        width: 120px;
+        height: 36px;
+        font-size: 20px;
+    }
+}
